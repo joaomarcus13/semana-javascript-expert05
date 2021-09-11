@@ -1,7 +1,7 @@
 import Busboy from 'busboy';
 import { pipeline } from 'stream/promises';
 import fs from 'fs';
-import { logger } from './logger';
+import { logger } from './logger.js';
 export default class UploadHandler {
   constructor({ io, socketId, downloadsFolder, messageTimeDelay = 200 }) {
     this.io = io;
@@ -32,7 +32,7 @@ export default class UploadHandler {
           .emit(this.ON_UPLOAD_EVENT, { processedToAlread, filename });
 
         logger.info(
-          `File [${filename}] get ${processedToAlread} bytes to ${this.socketId}`
+          `File [${filename}] got ${processedToAlread} bytes to ${this.socketId}`
         );
       }
     }

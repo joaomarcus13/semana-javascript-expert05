@@ -5,11 +5,12 @@ import { fileURLToPath, parse } from 'url';
 import UploadHandler from './uploadHandler.js';
 import { pipeline } from 'stream/promises';
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const defaultDawnloadsFolder = resolve(__dirname, '../', 'downloads');
+const defaultDownloadsFolder = resolve(__dirname, '../', 'downloads');
+
 
 export default class Routes {
   io;
-  constructor(downloadsFolder = defaultDawnloadsFolder) {
+  constructor(downloadsFolder = defaultDownloadsFolder) {
     this.downloadsFolder = downloadsFolder;
     this.fileHelper = FileHelper;
   }
@@ -32,6 +33,7 @@ export default class Routes {
     const {
       query: { socketId },
     } = parse(req.url, true);
+    console.log('post socket id', socketId);
     const uploadHandler = new UploadHandler({
       socketId,
       io: this.io,

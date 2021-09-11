@@ -15,15 +15,15 @@ Marque esse projeto com uma estrela 🌟
   - [x] Deve listar arquivos baixados
   - [] Deve receber stream de arquivos e salvar em disco
   - [x] Deve notificar sobre progresso de armazenamento de arquivos em disco
-  - [] Deve permitir upload de arquivos em formato image, video ou audio
-  - [] Deve atingir 100% de cobertura de código em testes
+  - [x] Deve permitir upload de arquivos em formato image, video ou audio
+  - [x] Deve atingir 100% de cobertura de código em testes
 
 - Web App
-  - [] Deve listar arquivos baixados
-  - [] Deve permitir fazer upload de arquivos de qualquer tamanho
-  - [] Deve ter função de upload via botão
-  - [] Deve exibir progresso de upload
-  - [] Deve ter função de upload via drag and drop
+  - [x] Deve listar arquivos baixados
+  - [x] Deve permitir fazer upload de arquivos de qualquer tamanho
+  - [x] Deve ter função de upload via botão
+  - [x] Deve exibir progresso de upload
+  - [x] Deve ter função de upload via drag and drop
 
 ## Desafios para alunos pós projeto
 
